@@ -1,0 +1,43 @@
+.container {
+  background-color: #eee;
+  width: 1000px;
+  margin: 30px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 150px 150px;
+      grid-template-rows: 150px 150px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.item {
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */

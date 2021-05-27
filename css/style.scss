@@ -1,0 +1,43 @@
+.container{
+    background-color: #eee;
+    width: 1000px;
+    margin: 30px auto;
+   
+    display: grid;
+    // it will take the height of the rows 
+    // repeat(amount, height)
+    grid-template-rows: 150px 150px;
+    // it will take the width of the columns
+    // grid-template-columns: 150px 150px 150px;
+    // repeat(amount, width)
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.item{
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.black{
+    background-color: black;
+}
+.pink{
+    background-color: pink;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+.red{
+    background-color: red;
+    // grid-row-start: ;
+    // grid-row-end: ;
+    // to push the grid to the front or back
+}
+.blue{
+    background-color: blue;
+}
