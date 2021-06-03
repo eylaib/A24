@@ -36,8 +36,43 @@
     background-color: red;
     // grid-row-start: ;
     // grid-row-end: ;
+    // grid-column-end: ; include the third
     // to push the grid to the front or back
 }
 .blue{
     background-color: blue;
+}
+
+// example.html
+.box{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+.parent{
+    display: grid;
+    grid-template-rows: 50px repeat(2, 200px) 50px;
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 20px;
+}
+
+.header{
+    grid-row: 1;
+    grid-column: 1/5;
+}
+
+.sidebar{
+    grid-row: 2/4;
+    grid-column: 4;
+}
+
+.main{
+    grid-row: 3;
+    grid-column: 1/4;
+}
+
+.footer{
+    grid-row: 4;
+    grid-column: 1/5;
 }
